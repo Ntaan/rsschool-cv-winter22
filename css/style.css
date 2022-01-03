@@ -1,0 +1,258 @@
+@font-face {
+    font-family: Cabin;
+    src: url("../fonts/Cabin-Regular.ttf");
+   }
+   
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Cabin", "Arial", sans-serif;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+}
+
+.column {
+    width: 450px;
+    background-color: #F3F0EE;
+}
+
+.main_column {
+    width: 750px;
+}
+
+.header_photo {
+    border-radius: 50%;
+    background-color: #fff;
+    border: 15px solid rgb(207, 133, 207);;
+    text-align: center;
+    display: block;
+    margin: 60px auto;
+}
+
+.menu {
+    background-color: rgb(207, 133, 207);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.main_menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main_menu_item {
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+.main_menu_item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+
+.main_menu_item a:hover {
+    color:white;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+}
+
+.main_title {
+    font-size: 60px;
+    margin: 0 50px;
+    margin-bottom: 20px;
+}
+
+.title_desc {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 30px;
+    margin: 0 50px;
+    margin-bottom: 25px;
+}
+
+.contacts_list,
+.skills_list,
+.languages_list,
+.experience_list,
+.education_list {
+    padding: 0;
+    margin: 0;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    list-style: none;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.contacts_list {
+    line-height: 40px;
+}
+
+.contacts_list {
+    position: relative;
+}
+
+.mail::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 10px;
+    width: 27px;
+    height: 20px;
+    background-image: url("../icon/mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.github::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 43px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icon/github.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.contacts_item_github {
+    color: black;
+    text-decoration: none;
+}
+
+.contacts_item_github:hover {
+    color: rgb(136, 23, 136)
+}
+
+.map::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 81px;
+    width: 25px;
+    height: 34px;
+    background-image: url("../icon/map.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.skills_list,
+.languages_list {
+    line-height: 28px;
+}
+
+.skill_name {
+    width: 180px;
+}
+
+.skills_item {
+    display: flex;
+}
+
+.skills_item_level {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.skills_item_level .yes {
+    width: 13px;
+    height: 13px;
+    background-color: rgb(136, 23, 136);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.skills_item_level .not {
+    width: 13px;
+    height: 13px;
+    background-color: rgb(207, 133, 207);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.languages_list {
+    position: relative;
+}
+
+.languages_item::before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(136, 23, 136);
+    border-radius: 50%;
+}
+
+.languages_item.rus::before { 
+    top: 6px;
+}
+
+.languages_item.eng::before {
+    top: 32px;
+}
+
+.languages_item.pol::before {
+    top: 61px;
+}
+
+.experience_item,
+.education_item {
+    margin-bottom: 20px;
+
+}
+
+footer {
+    background-color: rgb(207, 133, 207);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.footer_block a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px;
+}
+
+.footer_block img {
+    color:white;
+}
